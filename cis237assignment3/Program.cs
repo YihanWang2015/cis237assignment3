@@ -10,6 +10,22 @@ namespace cis237assignment3
     {
         static void Main(string[] args)
         {
+            //instance of droid list object created
+
+            List<Droid> droid = new List<Droid>();
+
+            //instance of user interface
+            UserInterface ui = new UserInterface();
+
+            //instance of droid collection
+            DroidCollection droidCollection = new DroidCollection();
+
+            //display Main Menu of program 
+            ui.DisplayMainMenu(droid, droidCollection);
+
+
+
+
         }
     }
 }

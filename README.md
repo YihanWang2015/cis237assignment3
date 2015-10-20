@@ -3,6 +3,7 @@
 
 ## Author
 
+Yihan Wang
 
 
 ## Description
@@ -87,9 +88,7 @@ Solution Must:
 
 ### Notes
 
-If you did not do well on Assignment 1, you may want to look at the Assignment 1 Key that I did for some help related to UI classes, Collection classes, arrays, and structure.
-
-It may be benificial for you to create extra methods within the droid sub classes. You are not limited to the ones mentioned. You may even find it useful to make some additional ones that are protected and virtual.
+I haven't finished in this commit yet
 
 ## Outside Resources Used
 
