@@ -88,7 +88,7 @@ Solution Must:
 
 ### Notes
 
-I haven't finished in this commit yet
+
 
 ## Outside Resources Used
 

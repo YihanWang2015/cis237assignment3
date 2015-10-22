@@ -1,4 +1,6 @@
-﻿using System;
+﻿//Yihan Wang
+//CIS237 Assignment 3
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,8 +13,8 @@ namespace cis237assignment3
         static void Main(string[] args)
         {
             //instance of droid list object created
+			List<Droid> droid = new List<Droid>();
 
-            List<Droid> droid = new List<Droid>();
 
             //instance of user interface
             UserInterface ui = new UserInterface();

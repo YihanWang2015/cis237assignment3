@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Yihan Wang
+//CIS237 Assignment 3
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,19 +13,18 @@ namespace cis237assignment3
     {
 
         private bool toolbox, computerConnection, arm;
-        protected decimal computerConnectionCost = 10m, armCost = 10m;
+		protected decimal computerConnectionCost = 10m, armCost = 10m, toolboxCost = 10m;
 
-        public Utility()
-        {
 
-        }
         //six parameters constructor with three base parameters
-        public Utility(string material, string model, string color, bool toolbox, bool computerConnection, bool arm)
-            : base(material, model, color)
+		public Utility(string material, string color, string model, bool toolbox, bool computerConnection, bool arm)
+			: base(material, color, model)
         {
             this.toolbox = toolbox;
             this.computerConnection = computerConnection;
             this.arm = arm;
+			CalculateBaseCost ();
+			CalculateTotalCost ();
         }
 
         public bool Toolbox
@@ -31,7 +33,7 @@ namespace cis237assignment3
             set { this.toolbox = value; }
         }
 
-        public bool AomputerConnection
+        public bool ComputerConnection
         {
             get { return this.computerConnection; }
             set { this.computerConnection = value; }
@@ -45,15 +47,22 @@ namespace cis237assignment3
 
         public void CalculateTotalCost()
         {
+			if (!this.toolbox)
+				toolboxCost = 0;
+			if (!this.arm)
+				armCost = 0;
+			if (!this.computerConnection)
+				computerConnectionCost = 0;
+			
+				//Cost for both options
+				totalCost += toolboxCost + armCost + computerConnectionCost;
 
         }
-
-        public decimal TotalCost();
 
 
         public override string ToString()
         {
-            return base.ToString();
+			return base.ToString() + "      " +this.totalCost + "              "  + (this.toolbox ? "toolbox " : " ") + (this.arm ? "Arm " : " ") +(this.computerConnection ? "Connection" : " ") ;
         }
 
     }

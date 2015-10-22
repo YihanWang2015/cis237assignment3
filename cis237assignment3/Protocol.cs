@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Yihan Wang
+//CIS237 Assignment 3
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,21 +13,15 @@ namespace cis237assignment3
     {
         private int numberLanguages;
         private const decimal COSTPERLANGUAGE = 10.0m;
-        private string material, model, color;
 
-        public Protocol()
+
+        public Protocol(string material, string color, string model, int numberLanguages)
+            : base(material, color, model)
         {
 
-        }
-
-        public Protocol(string material, string model, string color, int numberLanguages)
-            : base(material, model, color)
-        {
-            //this.material = material;
-            //this.model = model;
-            //this.color = color;
             this.numberLanguages = numberLanguages;
-
+			CalculateBaseCost ();
+			CalculateTotalCost ();
         }
 
         public int NumberLanguages
@@ -36,15 +33,13 @@ namespace cis237assignment3
 
         public void CalculateTotalCost()
         {
-
+			base.totalCost += this.numberLanguages * COSTPERLANGUAGE;
         }
-
-        public decimal TotalCost();
 
 
         public override string ToString()
         {
-            return base.ToString();
+			return base.ToString() + "       " + this.totalCost + "         " + " # of Languages: " + this.numberLanguages.ToString();
         }
 
 

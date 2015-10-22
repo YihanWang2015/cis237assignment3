@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Yihan Wang
+//CIS237 Assignment 3
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;

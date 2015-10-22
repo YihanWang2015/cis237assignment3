@@ -1,4 +1,7 @@
-﻿using System;
+﻿//Yihan Wang
+//CIS237 Assignment 3
+
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -12,8 +15,13 @@ namespace cis237assignment3
         private string material;
         private string model;
         private string color;
+
         private decimal baseCost;
         protected decimal totalCost;
+
+		//prices of material
+		private decimal plasticCost = 20m;
+		private decimal metalCost = 40m;
 
         //zero argument constructor 
         public Droid()
@@ -22,7 +30,7 @@ namespace cis237assignment3
         }
 
         //3 parameter constructors
-        public Droid(string material, string model, string color)
+        public Droid(string material, string color, string model)
         {
             this.material = material;
             this.model = model;
@@ -60,18 +68,21 @@ namespace cis237assignment3
 
         public void CalculateBaseCost()
         {
-
+			if (this.material == "Plastic")
+				totalCost = plasticCost;
+			else
+				totalCost = metalCost;
         }
 
         public void CalculateTotalCost()
         {
-
+			totalCost = baseCost;
         }
 
 
         public override string ToString()
         {
-            return base.ToString();
+			return this.material + "        " + this.color + "         " + this.model;
         }
     }
 

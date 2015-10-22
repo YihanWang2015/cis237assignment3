@@ -1,0 +1,21 @@
+﻿<Properties StartupItem="cis237assignment3/cis237assignment3.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="cis237assignment3/UserInterface.cs">
+    <Files>
+      <File FileName="cis237assignment3/Program.cs" Line="15" Column="1" />
+      <File FileName="cis237assignment3/IDroid.cs" Line="16" Column="1" />
+      <File FileName="cis237assignment3/UserInterface.cs" Line="71" Column="4" />
+      <File FileName="cis237assignment3/DroidCollection.cs" Line="15" Column="1" />
+      <File FileName="cis237assignment3/Droid.cs" Line="44" Column="28" />
+      <File FileName="cis237assignment3/Janitor.cs" Line="56" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/media/dan/68A03CA4A03C7B20/Users/Dan/Desktop/Csharp/cis237assignment3/cis237assignment3/Program.cs" line="23" column="1" />
+      <Breakpoint file="/media/dan/68A03CA4A03C7B20/Users/Dan/Desktop/Csharp/cis237assignment3/cis237assignment3/Program.cs" line="13" column="1" />
+      <Breakpoint file="/media/dan/68A03CA4A03C7B20/Users/Dan/Desktop/Csharp/cis237assignment3/cis237assignment3/Janitor.cs" line="43" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
